@@ -3,6 +3,7 @@ using API.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,17 +11,15 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(AgendaContext))]
-    partial class AgendaContextModelSnapshot : ModelSnapshot
+    [Migration("20240104020124_CriacaoTabelaContato")]
+    partial class CriacaoTabelaContato
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-<<<<<<< HEAD
-                .HasAnnotation("ProductVersion", "8.0.1")
-=======
                 .HasAnnotation("ProductVersion", "8.0.0")
->>>>>>> 0c8b7f8cca12ce662c3a48d03c8abd14385e03b6
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
