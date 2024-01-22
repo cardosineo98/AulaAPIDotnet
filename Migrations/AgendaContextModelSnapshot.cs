@@ -16,11 +16,7 @@ namespace API.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-<<<<<<< HEAD
                 .HasAnnotation("ProductVersion", "8.0.1")
-=======
-                .HasAnnotation("ProductVersion", "8.0.0")
->>>>>>> 0c8b7f8cca12ce662c3a48d03c8abd14385e03b6
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
